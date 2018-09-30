@@ -7,16 +7,23 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch App.js",
-      "program": "${workspaceRoot}/src/app.js",
-      "outFiles": [ "${workspaceRoot}/.compiled/**/*.js" ]
+      "name": "Launch Backend",
+      "program": "${workspaceRoot}/api/src/app.js",
+      "outFiles": [ "${workspaceRoot}/api/dist/**/*.js" ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Frontend",
+      "program": "${workspaceRoot}/src/main.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js" ]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Launch Current File",
       "program": "${file}",
-      "outFiles": [ "${workspaceRoot}/.compiled/**/*.js" ]
+      "outFiles": [ "${workspaceRoot}/api/dist/**/*.js" ]
     }
   ]
 }
